@@ -34,6 +34,30 @@ header nav a:hover {
 .hero {
   padding: 2rem;
 }
+.site-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #d8b4f8; /* violet lilac */
+}
+
+.hero-image {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  margin-bottom: 1.5rem;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #3b0764;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
 
 .qr-section {
   margin: 2rem 0;
