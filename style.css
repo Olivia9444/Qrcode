@@ -1,49 +1,82 @@
-* {
-  box-sizing: border-box;
+/* GLOBAL STYLES */
+body {
+  font-family: 'Outfit', sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: "Outfit", sans-serif;
-  background-color: #d5e1ef;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container {
-  padding: 1rem;
-}
-
-.card {
-  background-color: #ffffff;
-  max-width: 320px;
-  padding: 1rem;
-  border-radius: 16px;
+  background: #D8BFD8; /* violet-lilac */
+  color: #333;
   text-align: center;
-  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
 }
 
-.card-image {
-  width: 100%;
+header {
+  background: #ffffffcc;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header nav a {
+  color: #4b0082;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+.hero {
+  padding: 2rem;
+}
+
+.qr-section {
+  margin: 2rem 0;
+}
+
+.qr-code {
+  width: 220px;
+  height: 220px;
+  border: 6px solid #fff;
   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
-.card-content {
-  padding: 1rem 0.5rem;
+.stacked-printers {
+  margin-top: 3rem;
 }
 
-.card-content h1 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #1f3251;
-  margin-bottom: 0.75rem;
+.printer-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.card-content p {
-  font-size: 0.95rem;
-  color: #7b879d;
-  line-height: 1.4;
+.printer-images .printer {
+  width: 200px;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.printer-images .printer:hover {
+  transform: scale(1.05);
+}
+
+.caption {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: #4b004b;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  background: #ffffffcc;
 }
