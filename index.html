@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>QR Code | My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex Nihilo Makers Community 3D Prints</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <header>
+    <h1>Ex Nihilo Makers Community 3D Prints</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="monthly-print-jan26.html">Monthly Print – January 2026</a>
+    </nav>
+  </header>
 
-  <main class="container">
-    <article class="card">
-      <img id="qr" alt="QR code"  
-        src="images/image-qr-code.png" 
-        alt="QR code linking to my website" 
-        class="card-image"
-        <script
-  const siteURL = "https://exnihilomakerscommunity3dprints.netlify.app/";
-  const qr = document.getElementById("qr");
+  <main class="hero">
+    <section class="qr-section">
+      <h2>Scan to Visit This Website</h2>
+      <img src="images/qr-code.png" alt="QR Code linking to this site" class="qr-code" />
+    </section>
 
-  qr.src = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(siteURL)}`;
-        </script>
-
-      <div class="card-content">
-        <h1>Ex Nihilo Makers Community</h1>
-        <p>
-          Scan the QR code to visit my website and follow my monthly 3D Prints,
-          projects, and maintenance releases.
-        </p>
+    <section class="stacked-printers">
+      <h2>Featured 3D Printers</h2>
+      <div class="printer-images">
+        <img src="images/tronxy-printer.png" alt="Tronxy 3D Printer" class="printer" />
+        <img src="images/ender-creality-2021.png" alt="Ender Creality 3D Printer" class="printer" />
+        <img src="images/adx5-flashforge.png" alt="ADX5 FlashForge 3D Printer" class="printer" />
       </div>
-    </article>
+      <p class="caption">Three iconic printers balanced on a white-glove silver platter.</p>
+    </section>
   </main>
 
+  <footer>
+    <p>&copy; 2025 Ex Nihilo Makers Community. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
