@@ -22,7 +22,13 @@
         src="images/image-qr-code.png" 
         alt="QR code linking to my website" 
         class="card-image"
-      />
+        <script>
+  const siteURL = "https://yourwebsite.org";
+  const qr = document.getElementById("qr");
+
+  qr.src = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(siteURL)}`;
+        </script>
+  />
 
       <div class="card-content">
         <h1>Improve your front-end skills by building projects</h1>
