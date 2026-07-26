@@ -167,3 +167,75 @@ button{
     margin-top:20px;
 }
 }
+.product {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #F8F4FF;
+    border: 2px solid #D8B4FE;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.10);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+    color: #581C87;
+    font-size: 18px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #C084FC;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    background: white;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    color: #2E1065;
+}
+
+button {
+    margin-top: 20px;
+    padding: 16px;
+    font-size: 18px;
+    background: #6B21A8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #581C87;
+}
