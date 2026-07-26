@@ -132,5 +132,38 @@ footer {
     .button-link {
         width:90%;
     }
+form{
+    display:flex;
+    flex-direction:column;
+    max-width:600px;
+    margin:auto;
+    text-align:left;
+}
 
+label{
+    font-weight:bold;
+    margin-top:15px;
+    color:#581C87;
+}
+
+input,
+select,
+textarea{
+    padding:12px;
+    margin-top:6px;
+    margin-bottom:10px;
+    border:1px solid #6B21A8;
+    border-radius:8px;
+    font-size:16px;
+    font-family:inherit;
+}
+
+input[type="radio"]{
+    width:auto;
+    margin-right:8px;
+}
+
+button{
+    margin-top:20px;
+}
 }
